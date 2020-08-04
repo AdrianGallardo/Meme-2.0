@@ -163,6 +163,7 @@ class EditorController: UIViewController, UIImagePickerControllerDelegate, UINav
 		let object = UIApplication.shared.delegate
 		let appDelegate = object as! AppDelegate
 		appDelegate.memes.append(meme)
+		print(appDelegate.memes.count)
 	}
 	
 	func setupTextField(_ textField: UITextField, _ defaultText: String) {
