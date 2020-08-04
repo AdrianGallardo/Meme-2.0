@@ -35,11 +35,15 @@ class EditorController: UIViewController, UIImagePickerControllerDelegate, UINav
 		
 		btnCamera.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
 		btnShare.isEnabled = false
+		
+		tabBarController?.tabBar.isHidden = true
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
 		unsubscribeFromKeyboardNotifications()
+		
+		tabBarController?.tabBar.isHidden = true
 	}
 	
 	override func viewDidLoad() {
