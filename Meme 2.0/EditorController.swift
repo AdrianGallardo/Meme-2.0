@@ -43,7 +43,7 @@ class EditorController: UIViewController, UIImagePickerControllerDelegate, UINav
 		super.viewWillDisappear(animated)
 		unsubscribeFromKeyboardNotifications()
 		
-		tabBarController?.tabBar.isHidden = true
+		tabBarController?.tabBar.isHidden = false
 	}
 	
 	override func viewDidLoad() {
@@ -167,7 +167,8 @@ class EditorController: UIViewController, UIImagePickerControllerDelegate, UINav
 		let object = UIApplication.shared.delegate
 		let appDelegate = object as! AppDelegate
 		appDelegate.memes.append(meme)
-		print(appDelegate.memes.count)
+		
+		navigationController?.popViewController(animated: true)
 	}
 	
 	func setupTextField(_ textField: UITextField, _ defaultText: String) {

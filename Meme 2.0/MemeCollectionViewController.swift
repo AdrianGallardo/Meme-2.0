@@ -10,6 +10,9 @@ import UIKit
 
 class MemeCollectionViewController: UICollectionViewController {
 	
+	@IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+	@IBOutlet var memeCollectionView: UICollectionView!
+	
 	var memes: [Meme]! {
 		let object = UIApplication.shared.delegate
 		let appDelegate = object as! AppDelegate
@@ -17,7 +20,18 @@ class MemeCollectionViewController: UICollectionViewController {
 	}
 
 	override func viewDidLoad() {
-			super.viewDidLoad()
+		super.viewDidLoad()
+		let space:CGFloat = 3.0
+		let dimensionW = (view.frame.size.width - (2 * space)) / 3.0
+		let dimensionH = (view.frame.size.height - (2 * space)) / 5.0
+		
+		flowLayout.minimumInteritemSpacing = space
+		flowLayout.minimumLineSpacing = space
+		flowLayout.itemSize = CGSize(width: dimensionW, height: dimensionH)
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		memeCollectionView.reloadData()
 	}
 	
 	// MARK: - UICollectionViewDataSource
@@ -28,11 +42,9 @@ class MemeCollectionViewController: UICollectionViewController {
 	
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeViewCell", for: indexPath) as! MemeViewCell
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionViewCell", for: indexPath) as! MemeCollectionViewCell
 		let meme = self.memes[(indexPath as NSIndexPath).row]
 		
-		// Set the name and image
-//		cell.nameLabel.text = villain.name
 		cell.memeImageView?.image = meme.memedImage
 		
 		return cell
