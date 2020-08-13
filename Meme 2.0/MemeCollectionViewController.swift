@@ -23,7 +23,7 @@ class MemeCollectionViewController: UICollectionViewController {
 		super.viewDidLoad()
 		let space:CGFloat = 3.0
 		let dimensionW = (view.frame.size.width - (2 * space)) / 3.0
-		let dimensionH = (view.frame.size.height - (2 * space)) / 5.0
+		let dimensionH = (view.frame.size.height - (2 * space)) / 3.0
 		
 		flowLayout.minimumInteritemSpacing = space
 		flowLayout.minimumLineSpacing = space
@@ -58,4 +58,10 @@ class MemeCollectionViewController: UICollectionViewController {
 		
 	}
 
+}
+
+class MemeCollectionViewCell: UICollectionViewCell {
+	
+	@IBOutlet weak var memeImageView: UIImageView!
+	
 }
