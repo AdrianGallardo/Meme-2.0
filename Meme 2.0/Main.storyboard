@@ -67,19 +67,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xJ9-lw-cie">
-                                <rect key="frame" x="0.66666666666665719" y="275" width="374" height="272"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xJ9-lw-cie">
+                                <rect key="frame" x="37.666666666666657" y="286" width="300" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="2dW-kP-cfX"/>
-                                    <constraint firstAttribute="height" constant="272" id="nD2-7H-xEQ"/>
+                                    <constraint firstAttribute="width" constant="300" id="Tgi-29-6BG"/>
+                                    <constraint firstAttribute="height" constant="250" id="pvo-nF-5bo"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xJ9-lw-cie" firstAttribute="centerY" secondItem="hox-F7-8je" secondAttribute="centerY" id="KOb-Cm-czm"/>
-                            <constraint firstItem="xJ9-lw-cie" firstAttribute="centerX" secondItem="hox-F7-8je" secondAttribute="centerX" id="qrm-ZU-Uyy"/>
-                            <constraint firstItem="xJ9-lw-cie" firstAttribute="centerX" secondItem="hox-F7-8je" secondAttribute="centerX" id="tc9-BI-mek"/>
+                            <constraint firstItem="xJ9-lw-cie" firstAttribute="centerX" secondItem="hox-F7-8je" secondAttribute="centerX" id="YkA-UZ-ocd"/>
+                            <constraint firstItem="xJ9-lw-cie" firstAttribute="centerY" secondItem="hox-F7-8je" secondAttribute="centerY" id="x4b-EU-XgB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hox-F7-8je"/>
                     </view>
@@ -89,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPV-HT-ULZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="-304"/>
+            <point key="canvasLocation" x="-578.57142857142856" y="-304.80000000000001"/>
         </scene>
         <!--Editor Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -100,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUn-BD-A28" userLabel="Bottom Toolbar">
-                                <rect key="frame" x="0.0" y="680" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="636" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Album" id="ZYU-85-YK0" userLabel="Btn File">
                                         <connections>
@@ -116,20 +114,20 @@
                                 </items>
                             </toolbar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nFZ-0F-N8u">
-                                <rect key="frame" x="0.66666666666665719" y="272.66666666666669" width="374" height="272.00000000000006"/>
+                                <rect key="frame" x="0.66666666666665719" y="248" width="374" height="272"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="4Yk-24-cXU"/>
                                     <constraint firstAttribute="height" constant="272" id="B9j-KJ-k0T"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="TOP" placeholder="TOP" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-2C-eGx">
-                                <rect key="frame" x="0.66666666666665719" y="280.66666666666669" width="374" height="49.666666666666686"/>
+                                <rect key="frame" x="0.66666666666665719" y="255.99999999999997" width="374" height="49.666666666666657"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="center" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="BOTTOM" placeholder="BOTTOM" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5b-tu-GxE">
-                                <rect key="frame" x="0.66666666666665719" y="487.33333333333331" width="374" height="49.333333333333314"/>
+                                <rect key="frame" x="0.66666666666665719" y="462.66666666666669" width="374" height="49.333333333333314"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
@@ -256,8 +254,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wIz-D1-qqP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="LQb-c6-lW4">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="blu-RD-nes"/>
+                    <navigationItem key="navigationItem" title="Sent Memes" id="LQb-c6-lW4">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="CfP-6j-07U">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="7xn-e1-d2n"/>
@@ -272,7 +269,7 @@
             </objects>
             <point key="canvasLocation" x="-1546" y="480"/>
         </scene>
-        <!--Meme Collection View Controller-->
+        <!--Sent Memes-->
         <scene sceneID="gBs-ne-zVv">
             <objects>
                 <collectionViewController id="D8Z-oT-Anw" customClass="MemeCollectionViewController" customModule="Meme_2_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -294,7 +291,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-L1-sr3">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-L1-sr3">
                                             <rect key="frame" x="16" y="16" width="68" height="68"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="1C5-hl-mSw"/>
@@ -319,7 +316,15 @@
                             <outlet property="delegate" destination="D8Z-oT-Anw" id="O0R-Gn-lPn"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="36g-LL-iGg"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Sent Memes" id="36g-LL-iGg">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="urt-Tj-uub">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="82c-5D-3cZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="flowLayout" destination="hKJ-z1-MCZ" id="jTR-HB-a4C"/>
                         <outlet property="memeCollectionView" destination="k6Z-H3-zUV" id="OaR-wb-ZTj"/>
@@ -330,6 +335,9 @@
             <point key="canvasLocation" x="-1546" y="-304"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="82c-5D-3cZ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="camera" catalog="system" width="128" height="96"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>

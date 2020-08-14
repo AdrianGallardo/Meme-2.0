@@ -17,7 +17,7 @@ class MemeTableViewController: UIViewController, UITableViewDelegate, UITableVie
 		let appDelegate = object as! AppDelegate
 		return appDelegate.memes
 	}
-	
+	//	MARK: - Life cycle
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
@@ -25,9 +25,8 @@ class MemeTableViewController: UIViewController, UITableViewDelegate, UITableVie
 	override func viewWillAppear(_ animated: Bool) {
 		memeTableView.reloadData()
 	}
-	
+	//	MARK: - // MARK: - UITableViewDataSource
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		print(self.memes.count)
   	return self.memes.count
 	}
 	
